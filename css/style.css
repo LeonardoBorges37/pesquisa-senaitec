@@ -58,3 +58,42 @@ p{
 textarea{
     min-height: 100px;
 }
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+input:invalid,
+select:invalid{
+    border-color: red;
+}
+
+input:valid,
+select:valid{
+    border-color: green;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+    boder: 1px solid #cccccc;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+button[type=submit]:hover {
+    background-color: rgb(178, 248, 49);
+    color: white;
+    transitation: 0.8s;
+}
+
+button[type=reset]:hover {
+    background-color: red;
+    color: white;
+    transitation: 0.8s;
+}

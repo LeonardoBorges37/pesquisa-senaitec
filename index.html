@@ -16,7 +16,7 @@
             <h1>Pesquisa SenaiTec</h1>   
         </header>
         <section>
-            <form action="index.html" method="get">
+            <form action="https://formspree.io/f/xrppgwqa" method="post">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     
@@ -39,7 +39,7 @@
                     
                     <br>
                     <label for="Userphone">Telefone:</label>
-                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9] {11}" placeholder="21987654321">
+                    <input type="phone" ame="Userphone" id="Userphone" pattern="[0-9] {2}" placeholder="219876543212">
                     
                     
                     <br>
@@ -56,7 +56,7 @@
                     
                     <input type="radio" 
                     name="userGender"
-                    id="userGender" value="masdculino">
+                    id="userGender" value="masculino">
                     <label 
                     for="userGender">Masculino</label>
                     <br>
@@ -84,7 +84,7 @@
                     </select>
                     <br>
                     <label for="userState">Estado:</label>
-                    <select name="userState" id="userState">
+                    <select name="userState" id="userState" required>
 
 
                     <option value="">Selecione...</option>
@@ -189,9 +189,18 @@
                     <label for="userComment">Deixe o seu comentário:</label>
                     <textarea name="userComment" id="userComment"></textarea>
                 </fieldset>
-                
+                <fieldset>
+                    <legend>Confirmações</legend>
+                    <p>Eu aceito participar da pesquisa:</p>
+                    <input type="checkbox" name="userLGPD" id="userLGPD" value="lgpd" Required>
+                    <label for="userLGPD">Eu aceito os termos e condições</label>
+                    <br>
+                    <input type="checkbox" name="userConfirmEmail" id="userConfirmEmail" value="email">
+                    <label for="userConfirmEmail">Desejo Receber os Resultados por Email</label>
+                    <br>
+                </fieldset>
                 <button type="submit">Enviar</button>
-                
+                <button type="reset">Limpar</button>
                 
                 
                 
